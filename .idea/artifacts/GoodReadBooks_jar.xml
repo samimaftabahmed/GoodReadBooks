@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="GoodReadBooks:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/GoodReadBooks_jar</output-path>
+    <root id="archive" name="GoodReadBooks.jar">
+      <element id="module-output" name="GoodReadBooks" />
+    </root>
+  </artifact>
+</component>

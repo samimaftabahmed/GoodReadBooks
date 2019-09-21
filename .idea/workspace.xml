@@ -7,7 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1cc89d55-b31e-4801-8d9e-7e9c8a85c5cf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/samhad/BookMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/samhad/BookMapper.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +86,9 @@
       <option name="presentableId" value="Default" />
       <updated>1569062823381</updated>
       <workItem from="1569062827107" duration="7761000" />
-      <workItem from="1569073750330" duration="5998000" />
+      <workItem from="1569073750330" duration="6692000" />
+      <workItem from="1569086195374" duration="497000" />
+      <workItem from="1569086714481" duration="282000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1569084451634</created>
@@ -94,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569084451634</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Readme updated with Todo">
+      <created>1569084855928</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1569084855928</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,7 +115,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -115,6 +127,7 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="First Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First Commit" />
+    <MESSAGE value="Readme updated with Todo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Readme updated with Todo" />
   </component>
 </project>

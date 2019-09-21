@@ -26,7 +26,7 @@ public class BookMapper extends Mapper<LongWritable, Text, Text, Text> {
                 String[] datum = token.split(",");
 
                 int foundPos = 0;
-                StringBuilder stringBuilder = new StringBuilder(datum[2]);
+                StringBuilder stringBuilder = new StringBuilder(datum[2].trim());
 
                 for (int i = 3; i < datum.length; i++) {
                     if (datum[i].trim().matches("\\d+.\\d+")) {
@@ -34,11 +34,11 @@ public class BookMapper extends Mapper<LongWritable, Text, Text, Text> {
                     } else {
                         foundPos++;
                         stringBuilder.append(",");
-                        stringBuilder.append(datum[i]);
+                        stringBuilder.append(datum[i].trim());
                     }
                 }
 
-                String val = datum[1] + "\trating " + datum[3 + foundPos];
+                String val = datum[1].trim() + "\trating " + datum[3 + foundPos].trim();
                 keyText.set(stringBuilder.toString());
                 valueText.set(val);
                 context.write(keyText, valueText);

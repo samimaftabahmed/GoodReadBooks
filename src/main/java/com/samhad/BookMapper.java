@@ -30,9 +30,11 @@ public class BookMapper extends Mapper<LongWritable, Text, Text, Text> {
 
                 for (int i = 3; i < datum.length; i++) {
                     if (datum[i].trim().matches("\\d+.\\d+")) {
+                        context.getCounter(RECORD_TYPES.GOOD_RECORDS).increment(1);
                         break;
                     } else {
                         foundPos++;
+                        context.getCounter(RECORD_TYPES.JUNK_RECORDS).increment(1);
                         stringBuilder.append(",");
                         stringBuilder.append(datum[i].trim());
                     }
@@ -44,5 +46,10 @@ public class BookMapper extends Mapper<LongWritable, Text, Text, Text> {
                 context.write(keyText, valueText);
             }
         }
+    }
+
+    private enum RECORD_TYPES {
+        GOOD_RECORDS,
+        JUNK_RECORDS
     }
 }

@@ -9,6 +9,7 @@
     <list default="true" id="1cc89d55-b31e-4801-8d9e-7e9c8a85c5cf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/samhad/BookMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/samhad/BookMapper.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -90,7 +91,7 @@
       <workItem from="1569086195374" duration="497000" />
       <workItem from="1569086714481" duration="386000" />
       <workItem from="1569117164119" duration="253000" />
-      <workItem from="1569120408063" duration="406000" />
+      <workItem from="1569120408063" duration="4205000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1569084451634</created>
@@ -120,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569117406517</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Readme  updated">
+      <created>1569120916447</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1569120916447</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

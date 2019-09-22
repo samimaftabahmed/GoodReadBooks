@@ -11,5 +11,5 @@ For dataset visit https://www.kaggle.com/jealousleopard/goodreadsbooks/downloads
 
 #### Todo
 
-- Data Cleansing of author fields
+- ~~Data Cleansing of author fields~~
 - ~~Implementation of Counters~~

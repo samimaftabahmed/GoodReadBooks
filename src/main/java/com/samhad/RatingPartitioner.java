@@ -11,6 +11,10 @@ public class RatingPartitioner extends Partitioner<Text, Text> {
 
         String[] valueSplit = text2.toString().split("\trating ");
 
-        return (int) Float.parseFloat(valueSplit[1]);
+        if (text.toString().contains("Multi-Writer:")) {
+            return 6;
+        } else {
+            return (int) Float.parseFloat(valueSplit[1]);
+        }
     }
 }

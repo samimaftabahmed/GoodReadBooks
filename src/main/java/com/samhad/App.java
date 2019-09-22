@@ -49,7 +49,7 @@ public class App extends Configured implements Tool {
         job.setReducerClass(BookReducer.class);
         job.setCombinerClass(BookReducer.class);
         job.setPartitionerClass(RatingPartitioner.class);
-        job.setNumReduceTasks(6);
+        job.setNumReduceTasks(7);
 
         job.setOutputFormatClass(TextOutputFormat.class);
         job.setInputFormatClass(TextInputFormat.class);

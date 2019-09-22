@@ -26,6 +26,7 @@ public class BookMapper extends Mapper<LongWritable, Text, Text, Text> {
                 String[] datum = token.split(",");
 
                 int foundPos = 0;
+                boolean multiWriterStatus = true;
                 StringBuilder stringBuilder = new StringBuilder(datum[2].trim());
 
                 for (int i = 3; i < datum.length; i++) {
@@ -34,8 +35,13 @@ public class BookMapper extends Mapper<LongWritable, Text, Text, Text> {
                         break;
                     } else {
                         foundPos++;
+                        if (multiWriterStatus) {
+                            stringBuilder.setLength(0);
+                            stringBuilder.append("Multi-Writer: ").append(datum[2].trim());
+                            multiWriterStatus = false;
+                        }
                         context.getCounter(RECORD_TYPES.JUNK_RECORDS).increment(1);
-                        stringBuilder.append(",");
+                        stringBuilder.append(", ");
                         stringBuilder.append(datum[i].trim());
                     }
                 }
